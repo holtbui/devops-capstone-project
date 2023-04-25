@@ -93,5 +93,5 @@ spec:
           echo "Deploying to OpenShift..."
           oc apply -f deploy/
           oc get pods -l app=accounts
-        runAfter:
+      runAfter:
         - build
