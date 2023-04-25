@@ -64,6 +64,7 @@ spec:
         value: "-v --with-spec --spec-color"
       runAfter:
         - clone
+
     - name: build
       workspaces:
         - name: source
@@ -77,6 +78,7 @@ spec:
       runAfter:
         - tests
         - lint
+
     - name: deploy
       workspaces:
         - name: manifest-dir
